@@ -1,0 +1,18 @@
+@import '~@shoelace-style/shoelace/dist/themes/base.css';
+
+.grid {
+  --co-padding: 16px;
+  display: grid;
+  --columns: 2;
+  --default-grid-area: 1 / span var(--columns);
+  --gap-cols: var(--co-padding);
+  --gap-rows: var(--co-padding);
+
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  grid-column-gap: var(--gap-cols);
+  grid-row-gap: var(--gap-rows);
+}
+
+.accordion {
+  --show-duration: 0;
+}

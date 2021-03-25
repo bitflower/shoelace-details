@@ -38,6 +38,35 @@ export class AppProfile {
     //     </ion-item>
     //   </ion-content>,
     // ];
-    return <div>MODULES</div>;
+    return (
+      <div>
+        {' '}
+        <sl-details
+          class="accordion"
+          summary={`YO`}
+          open={true}
+          // {...props}
+        >
+          {/* {children} */}
+          <div class="grid">
+            <div class="myitem">
+              <p>bbla</p>
+            </div>
+            <div class="myitem">
+              <p>bbla</p>
+            </div>
+            <div class="myitem">
+              <p>bbla</p>
+            </div>
+            <div class="myitem">
+              <p>bbla</p>
+            </div>
+            <div class="myitem">
+              <p>bbla</p>
+            </div>
+          </div>
+        </sl-details>
+      </div>
+    );
   }
 }
