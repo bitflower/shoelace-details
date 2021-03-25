@@ -43,26 +43,26 @@ export class AppProfile {
         {' '}
         <sl-details
           class="accordion"
-          summary={`YO`}
+          summary={`CLOSE AND OPEN ME!`}
           open={true}
           // {...props}
         >
           {/* {children} */}
           <div class="grid">
             <div class="myitem">
-              <p>bbla</p>
+              <co-pool-item />
             </div>
             <div class="myitem">
-              <p>bbla</p>
+              <co-pool-item />
             </div>
             <div class="myitem">
-              <p>bbla</p>
+              <co-pool-item />
             </div>
             <div class="myitem">
-              <p>bbla</p>
+              <co-pool-item />
             </div>
             <div class="myitem">
-              <p>bbla</p>
+              <co-pool-item />
             </div>
           </div>
         </sl-details>

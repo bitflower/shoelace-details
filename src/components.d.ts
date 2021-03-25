@@ -13,6 +13,8 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface CoPoolItem {
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -33,10 +35,17 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLCoPoolItemElement extends Components.CoPoolItem, HTMLStencilElement {
+    }
+    var HTMLCoPoolItemElement: {
+        prototype: HTMLCoPoolItemElement;
+        new (): HTMLCoPoolItemElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "co-pool-item": HTMLCoPoolItemElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,10 +56,13 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface CoPoolItem {
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
+        "co-pool-item": CoPoolItem;
     }
 }
 export { LocalJSX as JSX };
@@ -60,6 +72,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "co-pool-item": LocalJSX.CoPoolItem & JSXBase.HTMLAttributes<HTMLCoPoolItemElement>;
         }
     }
 }
